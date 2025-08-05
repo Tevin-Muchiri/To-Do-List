@@ -1,0 +1,153 @@
+body {
+  background-image: url('background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.heading {
+  text-align: center;
+  color: #f9f8f8;
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#task_input,
+#task_date {
+  height: 35px;
+  width: 250px;
+  padding: 5px 10px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-right: 10px;
+  transition: border-color 0.3s ease;
+}
+
+#task_input:focus,
+#task_date:focus {
+  outline: none;
+  border-color: #4CAF50;
+}
+
+.add {
+  background-color: #4CAF50;
+  color: white;
+  padding: 8px 15px;
+  width: 80px;
+  height: 35px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.add:hover {
+  background-color: #45a049;
+}
+
+.task_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.task_container:hover {
+  transform: translateX(5px);
+}
+
+.task_paragraph,
+.task_date {
+  flex: 1;
+  text-align: left;
+  margin: 0;
+  padding: 0 15px;
+}
+
+.task_date {
+  text-align: center;
+  color: #666;
+}
+
+.delete {
+  background-color: #f44336;
+  color: white;
+  padding: 8px 15px;
+  width: 80px;
+  height: 35px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.edit {
+  background-color: #3675f4;
+  color: white;
+  padding: 8px 15px;
+  width: 80px;
+  height: 35px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.edit:hover {
+  background-color: #0b2f77;
+}
+
+
+.delete:hover {
+  background-color: #941208;
+}
+
+.task_paragraph {
+  max-width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #333;
+}
+
+.list_headers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 15px;
+  margin-top: 30px;
+  font-weight: bold;
+  border-bottom: 2px solid #4CAF50;
+  color: #333;
+}
+
+.header_task,
+.header_date {
+  flex: 1;
+  color: #f9f8f8
+}
+
+.header_date {
+  margin-left: 170px;
+}
+
+.spacer {
+  width: 110px;
+}
